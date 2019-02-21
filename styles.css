@@ -3,18 +3,63 @@
    margin:0;
    border: 0; 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1.5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(83, 79, 79);
+    z-index:1;
+
+}
+.navLinks{
+    text-align: center;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+a{
+    display: flex;
+    color: white;
+    font-family: avenir next;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-decoration: none;
+ 
+    
+}
+
+a:hover{
+    color: rgb(106, 196, 188);
+}
+
+a:active{
+ color:  rgb(106, 196, 188);
+}
+
 .welcomeCont{
     width: 100%;
     height: 50em;
     background-image: url(img/img1.jpg);
     background-size: cover;
     background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .welcome{
-    position: relative;
+position: relative;
   left: 0;
   top: 14em;
   width: 100%;
@@ -38,25 +83,109 @@
    
 }
 
-
-
 .title  {
     display: flex;
-    align-items: center;
-    padding: 0;
-    border: 0;
-    margin: 0;
+    padding: 9em 0 2em 0;
     justify-content: center;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 1.5em;
     font-family: avenir next;
     width: 100%;
-    height: 15em;
     color: gray;
-    background-color: white;
     text-decoration: underline;
 }
 
-.desc1{
+.skillsCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 35em;
+    background-color: white;
+}
+
+.skillsDesc{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: .5em;
+    font-size: 1em;
+    font-weight: 200;
+    font-family: 'Trebuchet MS';
+    color: rgb(56, 49, 49);
+}
+
+.aboutCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 45em;
+    background-color: white;
+}
+
+.aboutTitle{
+    display: flex;
+    padding: 5em 0 2em 0;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: avenir next;
+    width: 100%;
+    color: gray;
+    text-decoration: underline;
+}
+
+.aboutDesc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    padding: 1em 5em;
+    font-size: 1em;
+    font-weight: 200;
+    font-family: 'Trebuchet MS';
+    color: rgb(56, 49, 49);
+}
+
+.contactCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 22em;
+    background-color: white;
+}
+
+.contactDesc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+
+    padding: 1em 5em;
+    font-size: 1em;
+    font-weight: 200;
+    font-family: 'Trebuchet MS';
+    color: rgb(56, 49, 49);
+}
+
+.contactTitle{
+    display: flex;
+    padding: 3em 0 2em 0;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: avenir next;
+    width: 100%;
+    color: gray;
+    text-decoration: underline;
+}
+
+
+.pic1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +200,7 @@
     background-repeat: no-repeat;
 }
 
-.desc2{
+.pic2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +216,7 @@
     
 }
 
-.desc3{
+.pic3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,18 +231,17 @@
     background-repeat: no-repeat;
 }
 
-h3{
+/* h3{
     display: flex;
     text-align: center;
     width: 70%;
-    background-color: rgba(240, 175, 175, 0.486);
     padding: 8px, 24px;
     border-radius: .5em;
+} */
+
+
+
+.links{
+    color: blue;
 }
 
-a{
-    color: white;
-    font-family: avenir next;
-    font-size: 1.5em;
-    font-weight: 400;
-}
