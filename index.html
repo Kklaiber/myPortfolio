@@ -7,7 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <script src="main.js"></script>
-
+    <style>
+        .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+    </style>
 </head>
 <body>
     <div id="parallax">
@@ -21,25 +90,77 @@
         <div class="welcome"><h1>Hi! My name is Kyle Klaiber. Full Stack Web Developer.</h2></div></br>
         <div class="welcome2"><h2>Welcome to my page.</h3></div>
     </div>
-    <section id="skills" class="skillsCont">
+    <div id="skills" class="skillsCont">
         <div class="title"><h2>Skills</h2></div>
-        <div class="skillsDesc"><h3>JavaScript, HTML, CSS, Node.JS, React.JS, AngularJS, Angular, TypeScript, MongoDB</h3></div>
-    </section>
+        <div id="skillTag" class="languages"><h4>Languages & Frameworks</h4></div>
+        <div class="skillsDesc">
+                ​ HTML5, ES6, CSS, JavaScript, Node.js, TypeScript, jQuery, Bootstrap, AngularJS,
+                Angular 6, ReactJS, Redux, NoSQL, SQL server, Express, Mongodb, Mongoose, Passport
+            </div>
+            <div id="skillTag" class="tech"><h4>Technologies</h4></div>
+            <div class="skillsDesc">​Visual Studio Code, Git, GitHub, Heroku, mLab, REST, AJAX, JSON, XML, AWS, Cordova, Ionic​
+            </div>
+            <div id="skillTag" class="other"><h4>Other Skills</h4></div>
+            <div class="skillsDesc">​Agile Project Management, Agile Methodologies, Scrum methodologies, UX/UI, Leadership, Event Management, Collaboration, Leadership Development</div>
+
+    </div>
     <div id='welcome1' class="pic1"></div>
     <div id="about" class="aboutCont">
+        <div class="imgTitleCont">
             <div class="aboutTitle"><h2>About Me</h2></div>
+            <div class="myImg"><img src="img/me.jpg" alt="" class="myPic"></div>
+        </div>
             <div class="aboutDesc"><h3>I graduated from Bethel School of Technology, a first of its kind, faith-based coding bootcamp in 2018. I completed their Full Stack Web Development program in JavaScript with a 4.0 and gained incredible insight in how to bring character and integrity to the workplace. Along with Bethel's "Coder For Life" program, I am on a life long journey of learning and sharpening my craft. I am passionate about creating spaces where beauty meets practicality. I am geared to find solutions to problems and fully understand areas I am working with to bring excellence and innovation to change the world. I believe we are living in an amazing time where we can use our minds and imaginations to create things never dreamed of before. To inspire the following generations with dreams and ideas to use technology to bring about a better way of life.</h3></div>
     </div>
     <div class="pic2"></div>
     <div id="contact" class="contactCont">
             <div class="contactTitle"><h2>Contact</h2></div>
             <div class="contactDesc">
-                <a class="links" id="linkedIn" href="">LinkedIn</a>
-                <a class="links" id="email" href="">Email</a>
-                <a class="links" id="phone" href="">Phone</a>
-                <a class="links" id="gitHub" href="">GitHub</a>
+                <a class="links" id="linkedIn"  target="_blank" title="LinkedIn Profile" href="https://www.linkedin.com/in/kyle-klaiber-4b7468164/"></a>
+                <button class="links" id="email" title="Email"></button>
+                <a class="links" id="phone" title="Phone Number" href="views/email.html"></a>
+                <div class="gitHubCont">
+                    <a class="links" id="gitHub"  target="_blank" title="GitHub Profile" href="https://github.com/Kklaiber"></a>
+                </div>
+                <a class="links" id="resume" target="_blank" title="My Resumé" href="https://docs.google.com/document/d/19i_fQOFt2Rs-VzRpypdcngLwya4_mw7MJ-vYDYCYZXw/edit?usp=sharing"></a>
             </div>
     </div>
 </div>
+
+<!-- Modal for Phone and Email -->
+<div id="myEmailModal" class="emailModal">
+    <div class="emailModal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+        </div>
+        <div class="emailModal-body">
+            <p>Thank you for your interest! </p>
+            <p>Telephone: (925) 390-9788</p>     
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+</div>
+
+<div id="myPhoneModal" class="phoneModal">
+        <div class="phoneModal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="phoneModal-body">
+                <p>Thank you for your interest! </p>
+                <p>Email: kylesklaiber@gmail.com </p>     
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    
+
+
 </body>
 </html>
