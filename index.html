@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="main.js" defer></script>
     
 </head>
@@ -39,21 +40,31 @@
     <div id="about" class="aboutCont">
         <div class="imgTitleCont">
             <div class="aboutTitle"><h2>About Me</h2></div>
-            <div class="myImg"><img src="img/me.jpg" alt="" class="myPic"></div>
         </div>
             <div class="aboutDesc"><h3>I graduated from Bethel School of Technology, a first of its kind, faith-based coding bootcamp in 2018. I completed their Full Stack Web Development program in JavaScript with a 4.0 and gained incredible insight in how to bring character and integrity to the workplace. Along with Bethel's "Coder For Life" program, I am on a life long journey of learning and sharpening my craft. I am passionate about creating spaces where beauty meets practicality. I am geared to find solutions to problems and fully understand areas I am working with to bring excellence and innovation to change the world. I believe we are living in an amazing time where we can use our minds and imaginations to create things never dreamed of before. To inspire the following generations with dreams and ideas to use technology to bring about a better way of life.</h3></div>
-    </div>
+            <div class="myImg"><img src="img/me.jpg" alt="" class="myPic"></div>
+
+        </div>
     <div class="pic2"></div>
     <div id="contact" class="contactCont">
             <div class="contactTitle"><h2>Contact</h2></div>
             <div class="contactDesc">
-                <a class="links" id="linkedIn"  target="_blank" title="LinkedIn Profile" href="https://www.linkedin.com/in/kyle-klaiber-4b7468164/"></a>
-                <button type="button" class="links" id="email" title="Email"></button>
-                <button type="button" class="links" id="phone" title="Phone Number" ></button>
-                <div class="gitHubCont">
-                    <a class="links" id="gitHub"  target="_blank" title="GitHub Profile" href="https://github.com/Kklaiber"></a>
-                </div>
-                <a class="links" id="resume" target="_blank" title="My Resumé" href="https://docs.google.com/document/d/19i_fQOFt2Rs-VzRpypdcngLwya4_mw7MJ-vYDYCYZXw/edit?usp=sharing"></a>
+                <span style="font-size: 3em; color: red">
+                        <a id="linkedIn"  target="_blank" title="LinkedIn Profile" href="https://www.linkedin.com/in/kyle-klaiber-4b7468164/"><i class="fab fa-linkedin" style=" color: dodgerblue"></i></a>
+                </span>
+                <span >
+                        <button type="button" class="emailIcon" id="email" title="Email"><i class="far fa-envelope fa-8x" style="color: dodgerblue"></i></button>
+                </span>
+                <span>
+                        <button type="button" class="" id="phone" title="Phone Number" ><i class="fas fa-mobile-alt fa-6x" style="color: dodgerblue"></i></button>
+                </span>
+                <span style="font-size: 3em; color: dodgerblue">
+                        <a id="gitHub"  target="_blank" title="GitHub Profile" href="https://github.com/Kklaiber"><i class="fab fa-github-square"  style=" color: dodgerblue"></i></a>
+                </span>
+                <span>
+                        <a class="" id="resume" target="_blank" title="My Resumé" href="https://docs.google.com/document/d/19i_fQOFt2Rs-VzRpypdcngLwya4_mw7MJ-vYDYCYZXw/edit?usp=sharing"><i class="far fa-file fa-3x" style=" color: dodgerblue""></i></a>
+                </span>
+                
             </div>
     </div>
 </div>
@@ -61,12 +72,13 @@
 <!-- Modal for Phone and Email -->
 <div id="myEmailModal" class="emailModal">
     <div class="emailModal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
+        <div class="emailModal-header">
+            <span class="closeEmail">&times;</span>
+            <p class="modalTitle">Email Information</p>
         </div>
         <div class="emailModal-body">
-            <p>Thank you for your interest! </p>
-            <p>Telephone: (925) 390-9788</p>     
+            <p class="modalContent">Thank you for your interest! </p></br>
+            <p class="modalContent">Email: kylesklaiber@gmail.com </p>     
         </div>
         <div class="modal-footer"></div>
     </div>
@@ -74,12 +86,14 @@
 
 <div id="myPhoneModal" class="phoneModal">
         <div class="phoneModal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
+            <div class="phoneModal-header">
+                <span class="closePhone">&times;</span>
+                <p class="modalTitle">Phone Contact</p>
+
             </div>
             <div class="phoneModal-body">
-                <p>Thank you for your interest! </p>
-                <p>Email: kylesklaiber@gmail.com </p>     
+                <p class="modalContent">Thank you for your interest! </p>
+                <p class="modalContent">Telephone: (925) 390-9788</p>     
             </div>
             <div class="modal-footer"></div>
         </div>

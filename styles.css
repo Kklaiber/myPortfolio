@@ -31,11 +31,11 @@ nav{
 }
 a{
     display: flex;
-    color: white;
     font-family: avenir next;
     font-size: 1.5em;
     font-weight: 100;
     text-decoration: none;
+    color: white;
  
     
 }
@@ -85,7 +85,7 @@ position: relative;
 
 .title  {
     display: flex;
-    padding: 6em 0 2em 0;
+    padding: 4em 0 0 0;
     justify-content: center;
     font-weight: bolder;
     font-size: 1.5em;
@@ -100,7 +100,7 @@ position: relative;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 55em;
+    height: 45em;
     background-color: white;
 }
 
@@ -122,7 +122,7 @@ position: relative;
     text-decoration: underline;
     font-size: 1.7em;
     font-weight: 100;
-    padding: 2em 0 0 0;
+    padding: 1em 0 0 0;
     justify-content: center;
     font-weight: bolder;
     font-size: 1.4em;
@@ -134,13 +134,16 @@ position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 45em;
+    height: 55em;
     background-color: white;
 }
 
 .aboutTitle{
     display: flex;
-    padding: 9em 0 2em 17em;
+    /* padding: 9em 0 2em 17em; */
+    padding: 3em 0 0 0;
+    justify-content: center;
+    align-items: center;
     font-weight: bolder;
     font-size: 1.5em;
     font-family: avenir next;
@@ -154,7 +157,8 @@ position: relative;
     align-items: center;
     text-align: center;
     width: 80%;
-    padding: 1em 6em 1em 6em;
+    height: 20em;
+    padding: 0 0 0 8em;
     font-size: 1em;
     font-weight: 200;
     font-family: avenir next;
@@ -177,7 +181,7 @@ position: relative;
 }
 .myImg{
     display: flex;
-    padding: 10em 10em 1em 0;
+    justify-content: center;
 }
 
 .contactCont{
@@ -185,7 +189,7 @@ position: relative;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 32em;
+    height: 35em;
     background-color: white;
 }
 
@@ -196,7 +200,7 @@ position: relative;
     text-align: center;
     width: 80%;
 
-    padding: 1em 5em;
+    padding: 4em 5em;
     font-size: 1em;
     font-weight: 200;
     font-family: 'Trebuchet MS';
@@ -275,7 +279,7 @@ position: relative;
 .links{
     color: blue;
 }
-.gitHubCont{
+/* .gitHubCont{
     border-radius: 50%;
     background-color:  rgb(106, 156, 196);
 }
@@ -301,23 +305,35 @@ position: relative;
     background-size: cover;
     filter: grayscale(100%);
 }
+.phoneCont{
+    border-radius: 50%;
+    background-color:  rgb(106, 156, 196);
+}*/
 
-#email{
-    background-image: url('icons/email.png');
+/* #email{
     height: 10em;
-    width: 10em;
+    width: 2em;
     background-size: cover;
-    filter: grayscale(100%);
     text-decoration: none;
 }
+.emailCont{
+    border-radius: 50%;
+    background-color:  rgb(106, 156, 196);
+}  */
 
-#linkedIn{
-    background-image: url('icons/linkedIn.png');
-    height: 4.5em;
-    width: 4.5em;
-    background-size: cover;
-    filter: grayscale(100%);
+#email:focus,
+#email:hover,
+#phone:focus,
+#phone:hover{
+    cursor: pointer;
+    
 }
+/* 
+#linkedIn{
+    
+    background-size: cover;
+}
+
 
 #resume{
     background-image: url('icons/resume.png');
@@ -328,11 +344,15 @@ position: relative;
     
 }
 
+.resumeCont{
+    border-radius: 50%;
+    background-color:  rgb(106, 156, 196);
+} */
  .emailModal{
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 7em;
+  padding-top: 9em;
   left: 0;
   top: 0;
   width: 100%;
@@ -346,7 +366,7 @@ position: relative;
     display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 7em;
+  padding-top: 9em;
   left: 0;
   top: 0;
   width: 100%;
@@ -359,11 +379,10 @@ position: relative;
 .emailModal-content{
     position: relative;
     background-color: rgb(255, 255, 255);
-    justify-content: center;
     margin: auto;
     padding: 0;
     border: .2em solid #888;
-    width: 50%;
+    width: 45%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -397,30 +416,83 @@ position: relative;
     to {top: 0; opacity: 1}
 }
 
-.close{
-    color: white;
-    float: right;
-    padding: 0;
-    font-size: 2em;
-    font-weight: 700;
-}
 
-
-.close:hover,
-.close:focus {
-    color: blue;
+.closePhone:hover,
+.closePhone:focus {
+    color: rgb(106, 196, 188);
     text-decoration: none;
     cursor: pointer;
 }
 
-.modal-header{
-    padding: 1em 4em;
-    background-color: rgb(0, 89, 255);
+.closeEmail:hover,
+.closeEmail:focus {
+    color: rgb(106, 196, 188);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeEmail{
     color: white;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 2px 0 0;
+    float: right;
+}
+
+.closePhone{
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 2px 0 0;
+    float: right;
+}
+
+/* .phoneTitle{
+    color: white;
+    width: 50%;
+} */
+.phoneModal-header{
+    background-color: #333;
     font-family: avenir next;
+    font-family: avenir next; 
+    padding: 0 4px 0 0;
+}
+.emailModal-header{
+    background-color: #333;
+    font-family: avenir next; 
+    padding: 0 4px 0 0; 
+
+}
+.modalTitle{
+    display: flex;
+   align-content: center;
+   justify-content: center;
+   font-family: avenir next;
+   font-size: 1.4em;
+   padding: 8px;
+   text-align: right;
+   color: white;
+
+}
+
+.modalContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
 }
 
 .emailModal-body{
+    padding: 3em 4em;
+    font-family: avenir next;
+    display: flex;
+   
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.phoneModal-body{
     padding: 3em 4em;
     font-family: avenir next;
     display: flex;
@@ -430,15 +502,26 @@ position: relative;
     font-weight: bold;
 }
 
-.phoneModal-body{
-    padding: 5em 4em;
-}
-
 .modal-footer {
-    padding: 1em 4em;
-    background-color: rgb(0, 89, 255);
+
+    background-color: #333;
     color: white;
   }
  
 
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
 

@@ -1,39 +1,52 @@
-const parallax = document.getElementById('parallax');
+const parallax = document.getElementById("parallax");
 
-window.addEventListener('scroll', function(){
-    let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset * 0.7 + "px";
+window.addEventListener("scroll", function() {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.7 + "px";
 });
 
+var phoneModal = document.getElementById("myPhoneModal");
+var emailModal = document.getElementById("myEmailModal");
+var emailBtn = document.getElementById("email");
+var phoneBtn = document.getElementById("phone");
 
-var phoneModal = document.getElementById('myPhoneModal');
-var emailModal = document.getElementById('myEmailModal');
-var emailBtn = document.getElementById('email');
-var phoneBtn = document.getElementById('phone');
+var span = document.getElementsByClassName("closeEmail")[0];
+var span2 = document.getElementsByClassName("closePhone")[0]
+// var span2 = document.getElementsByClassName("close")[0];
 
-var span = document.getElementsByClassName('close')[0];
+phoneBtn.onclick = function() {
+  phoneModal.style.display = "block";
+};
 
+emailBtn.onclick = function() {
+  emailModal.style.display = "block";
+};
 
-phoneBtn.onclick = function(){
-    phoneModal.style.display = "inherit";
+span.onclick = function() {
+
+    emailModal.style.display = "none";
+};
+
+span2.onclick = function(){
+    phoneModal.style.display = "none"
 }
 
-emailBtn.onclick = function(){
-    emailModal.style.display = "inherit";
-}
 
-span.onclick = function(){
-    phoneModal.style.display = 'none';
-    emailModal.style.display = 'none';
-}
 
-window.onclick = function(event){
-    if (event.target == phoneModal) {
-        phoneModal.style.display = 'none'
-    } else if (event.target == emailModal) {
-        emailModal.style.display = 'none';
-    }
-}
+
+
+
+window.onclick = function(event) {
+  if (event.target == phoneModal) {
+    phoneModal.style.display = "none";
+  } else if (event.target == emailModal) {
+    emailModal.style.display = "none";
+  }
+};
+
+
+
+
 
 
 
