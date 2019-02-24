@@ -276,9 +276,9 @@ position: relative;
 
 
 
-.links{
+/* #links:hover{
     color: blue;
-}
+} */
 /* .gitHubCont{
     border-radius: 50%;
     background-color:  rgb(106, 156, 196);
@@ -324,10 +324,15 @@ position: relative;
 #email:focus,
 #email:hover,
 #phone:focus,
-#phone:hover{
+#phone:hover,
+#resume:hover,
+#linkedIn:hover,
+#gitHub:hover{
     cursor: pointer;
+    color: red;
     
 }
+
 /* 
 #linkedIn{
     
@@ -454,12 +459,13 @@ position: relative;
 .phoneModal-header{
     background-color: #333;
     font-family: avenir next;
-    font-family: avenir next; 
     padding: 0 4px 0 0;
+    font-weight: 100;
 }
 .emailModal-header{
     background-color: #333;
-    font-family: avenir next; 
+    font-family: avenir next;
+    font-weight: 100; 
     padding: 0 4px 0 0; 
 
 }
@@ -478,18 +484,18 @@ position: relative;
 .modalContent{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    width: 100%;
 
 }
 
 .emailModal-body{
-    padding: 3em 4em;
+    padding: 1em;
     font-family: avenir next;
     display: flex;
-   
+    justify-content: center;
+    align-items: center;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .phoneModal-body{
