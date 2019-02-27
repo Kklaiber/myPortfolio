@@ -1,14 +1,505 @@
-*{
-   padding:0;
-   margin:0;
-   border: 0; 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-html{
-    scroll-behavior: smooth;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  padding: 0px;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-nav{
+/* NAVBAR SECTION */
+nav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 1.5em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
+
+nav .icon {
+    display: none;
+}
+
+.navLinks {
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+a {
+  display: flex;
+  font-family: avenir next;
+  font-size: 1.5em;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(106, 196, 188);
+}
+
+a:active {
+  color: rgb(106, 196, 188);
+}
+
+/* WELCOME DIV */
+.welcomeCont {
+  width: 100%;
+  height: 50em;
+  background-image: url(img/img1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome {
+  position: relative;
+  left: 0;
+  top: 14em;
+  width: 100%;
+  text-align: center;
+  font-family: avenir next;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.welcome2 {
+  position: relative;
+  left: 0;
+  top: 13em;
+  width: 100%;
+  text-align: center;
+  font-family: avenir next;
+  font-weight: bold;
+  color: white;
+}
+
+.title {
+  display: flex;
+  padding: 4em 0 0 0;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  font-family: avenir next;
+  width: 100%;
+  color: gray;
+  text-decoration: underline;
+}
+
+/* SKILLS DIV */
+.skillsCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 45em;
+  background-color: white;
+}
+
+.skillsDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+  padding: 1em 5em;
+  font-size: 1.3em;
+  font-weight: 200;
+  font-family: "Trebuchet MS";
+  color: rgb(56, 49, 49);
+}
+
+#skillTag {
+  text-decoration: underline;
+  font-size: 1.7em;
+  font-weight: 100;
+  padding: 1em 0 0 0;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.4em;
+  font-family: avenir next;
+  color: #333;
+}
+
+/* ABOUT DIV */
+.aboutCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45em;
+  background-color: white;
+}
+
+.aboutTitle {
+  display: flex;
+  /* padding: 9em 0 2em 17em; */
+  padding: 3em 0 0 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  font-family: avenir next;
+  color: gray;
+  text-decoration: underline;
+}
+
+.aboutDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: 20em;
+  padding: 0 0 0 7em;
+  font-size: 1em;
+  font-weight: 200;
+  font-family: avenir next;
+  color: rgb(56, 49, 49);
+}
+
+.imgTitleCont {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.myPic {
+  display: flex;
+  width: 7em;
+  height: 7.9em;
+  border-radius: 50%;
+  padding: 0.3em;
+  background-color: gray;
+}
+.myImg {
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTACT DIV */
+.contactTitle {
+    display: flex;
+    padding: 3em 0 2em 0;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: avenir next;
+    width: 100%;
+    color: gray;
+    text-decoration: underline;
+  }
+
+.contactCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 35em;
+  background-color: white;
+}
+
+.contactDesc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  padding: 4em 5em;
+  font-size: 1em;
+  font-weight: 200;
+
+  color: rgb(56, 49, 49);
+}
+
+.contactDesc a {
+  text-decoration: none;
+  display: block;
+}
+
+.contactHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    padding: 1em 0 0 0;
+    font-family: avenir next;
+  }
+
+  i{
+      font-size: 3.1em;
+  }
+
+span:hover {
+  color: rgb(106, 196, 188);
+  font-weight: 600;
+}
+
+span {
+  color: #333;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 5px 0 10px 0;
+  display: block;
+  /* text-transform:uppercase; */
+  font-family: avenir next;
+  letter-spacing: 1px;
+}
+
+
+/* IMAGES FOR SITE */
+.pic1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: avenir next;
+  width: 100%;
+  height: 45em;
+  background-image: url(img/img2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pic2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: avenir next;
+  width: 100%;
+  height: 45em;
+  background-image: url(img/img3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pic3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: avenir next;
+  width: 100%;
+  height: 45em;
+  background-image: url(img/img3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#email:focus,
+#email:hover,
+#phone:focus,
+#phone:hover,
+#resume:hover,
+#linkedIn:hover,
+#gitHub:hover {
+  cursor: pointer;
+  color: red;
+}
+
+/* MODAL STYLING */
+.emailModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 9em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.phoneModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 9em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.emailModal-content {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  padding: 0;
+  border: 0.2em solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.phoneModal-content {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  /* justify-content: center; */
+  margin: auto;
+  padding: 0;
+  border: 0.2em solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.closePhone:hover,
+.closePhone:focus {
+  color: rgb(106, 196, 188);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closeEmail:hover,
+.closeEmail:focus {
+  color: rgb(106, 196, 188);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closeEmail {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 0 2px 0 0;
+  float: right;
+}
+
+.closePhone {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 0 2px 0 0;
+  float: right;
+}
+
+.phoneModal-header {
+  background-color: #333;
+  font-family: avenir next;
+  padding: 0 4px 0 0;
+  font-weight: 100;
+}
+.emailModal-header {
+  background-color: #333;
+  font-family: avenir next;
+  font-weight: 100;
+  padding: 0 4px 0 0;
+}
+.modalTitle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: avenir next;
+  font-size: 1.4em;
+  padding: 8px;
+  text-align: right;
+  color: white;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0.3em 0 0 0;
+  width: 100%;
+}
+
+.emailModal-body {
+  padding: 1em;
+  font-family: avenir next;
+  height: 4em;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.phoneModal-body {
+  padding: 1em;
+  height: 4em;
+  font-family: avenir next;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.modal-footer {
+  background-color: #333;
+  color: white;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE: TABLET  */
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    margin: 0;
+    border: 0;
+  }
+
+  nav {
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -20,241 +511,154 @@ nav{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#333;
-    z-index:1;
-
-}
-.navLinks{
+    background-color: #333;
+    z-index: 1;
+  }
+  .navLinks {
     text-align: center;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     text-decoration: none;
-}
-a{
+  }
+  a {
     display: flex;
     font-family: avenir next;
     font-size: 1.5em;
     font-weight: 100;
     text-decoration: none;
     color: white;
- 
-    
-}
+  }
 
-a:hover{
+  a:hover {
     color: rgb(106, 196, 188);
-}
+  }
 
-a:active{
- color:  rgb(106, 196, 188);
-}
+  a:active {
+    color: rgb(106, 196, 188);
+  }
 
-.welcomeCont{
+  /* WELCOME DIV */
+  .welcomeCont {
     width: 100%;
-    height: 50em;
+    height: 70em;
     background-image: url(img/img1.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+  }
 
-.welcome{
-position: relative;
-  left: 0;
-  top: 14em;
-  width: 100%;
-  text-align: center;
-  font-family: avenir next;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
+  .welcome {
+    left: 0;
+    top: 23em;
+    width: 100%;
+    font-family: avenir next;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
 
-}
-
-.welcome2{
+  .welcome2 {
     position: relative;
     left: 0;
-    top: 13em;
+    top: 24em;
     width: 100%;
     text-align: center;
     font-family: avenir next;
     font-weight: bold;
     color: white;
-    
-   
-}
+  }
 
-.title  {
+  /* SKILLS DIV */
+
+  .skillsTitle {
     display: flex;
-    padding: 4em 0 0 0;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 1.5em;
-    font-family: avenir next;
-    width: 100%;
-    color: gray;
-    text-decoration: underline;
-}
-
-.skillsCont{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 45em;
-    background-color: white;
-}
-
-.skillsDesc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    border-radius: .5em;
-    padding: 1em 5em;
-    font-size: 1.3em;
-    font-weight: 200;
-    font-family: 'Trebuchet MS';
-    color: rgb(56, 49, 49);
-}
-
-#skillTag{
-    text-decoration: underline;
-    font-size: 1.7em;
-    font-weight: 100;
-    padding: 1em 0 0 0;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 1.4em;
-    font-family: avenir next;
-    color: #333;
-}
-
-.aboutCont{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 45em;
-    background-color: white;
-}
-
-.aboutTitle{
-    display: flex;
-    /* padding: 9em 0 2em 17em; */
     padding: 3em 0 0 0;
     justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 1.5em;
+    font-weight: 600;
+    font-size: 2.5em;
     font-family: avenir next;
+    width: 100%;
     color: gray;
     text-decoration: underline;
-}
-
-.aboutDesc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    height: 20em;
-    padding: 0 0 0 8em;
-    font-size: 1em;
-    font-weight: 200;
-    font-family: avenir next;
-    color: rgb(56, 49, 49);
-}
-
-.imgTitleCont{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.myPic{
-    display: flex;
-    width: 7em;
-    height: 7.9em;
-    border-radius: 50%;
-    padding: .3em;
-    background-color: gray;
-}
-.myImg{
-    display: flex;
-    justify-content: center;
-}
-
-.contactCont{
+  }
+  .skillsCont {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 35em;
+    height: 65em;
     background-color: white;
-}
+  }
 
-.contactDesc{
+  .skillsDesc {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     width: 80%;
-
-    padding: 4em 5em;
-    font-size: 1em;
-    font-weight: 200;
-    font-family: 'Trebuchet MS';
+    border-radius: 0.5em;
+    padding: 1em 5em;
+    font-size: 1.7em;
+    font-weight: 400;
+    font-family: avenir next;
     color: rgb(56, 49, 49);
-}
+  }
 
-.contactDesc a {
-    text-decoration:none;
-    display:block;
- 
-}
-
-.contactDesc a:hover{
-    color:red;
-}
-
-.contactDesc button span{
-    text-decoration:none;
-    display:block;
+  .skillTag h2 {
+    text-decoration: underline;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 1em 0 0 0;
+    justify-content: center;
+    font-family: avenir next;
     color: #333;
-    font-size:1.6em;
-    font-weight: 300;
-    padding:5px 0 10px 0;
-    display:block;
-    font-family:avenir next;
-    letter-spacing:1px;
-    
-}
+  }
 
-button span:hover{
-    color: rgb(106, 196, 188);
-    font-weight: 600;
-}
-span:hover{
-    color: rgb(106, 196, 188);
-    font-weight: 600;
-}
+  /* ABOUT DIV */
+  .aboutCont {
+    width: 100%;
+    height: 65em;
+    background-color: white;
+  }
 
-span{
-    color: #333;
-    font-size:.7em;
-    font-weight: 300;
-    padding:5px 0 10px 0;
-    display:block;
-    /* text-transform:uppercase; */
-    font-family:avenir next;
-    letter-spacing:1px;
-}
-
-
-
-.contactTitle{
+  .aboutTitle {
     display: flex;
-    padding: 3em 0 2em 0;
+    padding: 5em 0 1em 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: avenir next;
+    color: gray;
+    text-decoration: underline;
+  }
+
+  .aboutDesc {
+   
+    width: 80%;
+    height: 25em;
+    padding: 0em 1px 0 3.3em;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: avenir next;
+    color: rgb(56, 49, 49);
+  }
+
+  .myPic {
+    display: flex;
+    width: 8.6em;
+    height: 9.5em;
+    border-radius: 50%;
+    padding: 0.3em;
+    background-color: gray;
+  }
+  .myImg {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 0 0 ;
+  }
+
+  /* CONTACT DIV */
+
+  .contactTitle {
+    display: flex;
+    padding: 5em 0 2em 0;
     justify-content: center;
     font-weight: bolder;
     font-size: 1.5em;
@@ -262,25 +666,98 @@ span{
     width: 100%;
     color: gray;
     text-decoration: underline;
+  }
+  .contactCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 63em;
+    background-color: white;
+  }
+
+  .contactHeader{
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.9em;
+    padding: 0 0 1em 3em;
+    width: 80%;
+    font-family: avenir next;
+  }
+
+  .contactDesc {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+    padding: 2em 5em;
+    font-size: 1.3em;
+  
+  }
+
+  .contactDesc a {
+    text-decoration: none;
+    display: block;
+  }
+  i{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 3.5em;
+
+}
+.social{
+    padding: 2em 1.5em 0 0;
 }
 
+  span:hover {
+    color: rgb(106, 196, 188);
+    font-weight: 600;
+  }
 
-.pic1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  span {
+    color: #333;
+    font-size: 1em;
+    font-weight: 300;
+    display: block;
+    font-family: avenir next;
+    letter-spacing: 1px;
+  }
+
+
+  /* IMAGES FOR SITE */
+  .pic1 {
     font-weight: bold;
     font-family: avenir next;
     width: 100%;
-    height: 45em;
+    height: 65em;
     background-image: url(img/img2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-}
+  }
 
-.pic2{
+  .pic2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: avenir next;
+    width: 100%;
+    height: 65em;
+    background-image: url(img/img3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pic3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,23 +770,499 @@ span{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  /* MODAL STYLING */
+.emailModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 25em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .phoneModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 25em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .emailModal-content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 0;
+    border: 0.2em solid #888;
+    width: 56%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  
+  .phoneModal-content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    /* justify-content: center; */
+    margin: auto;
+    padding: 0;
+    border: 0.2em solid #888;
+    width: 55%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  .closePhone:hover,
+  .closePhone:focus {
+    color: rgb(106, 196, 188);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .closeEmail:hover,
+  .closeEmail:focus {
+    color: rgb(106, 196, 188);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .closeEmail {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 2px 0 0;
+    float: right;
+  }
+  
+  .closePhone {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 2px 0 0;
+    float: right;
+  }
+  
+  .phoneModal-header {
+    background-color: #333;
+    font-family: avenir next;
+    padding: 0 4px 0 0;
+    font-weight: 100;
+  }
+  .emailModal-header {
+    background-color: #333;
+    font-family: avenir next;
+    font-weight: 100;
+    padding: 0 4px 0 0;
+  }
+  .modalTitle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: avenir next;
+    font-size: 1.4em;
+    padding: 8px;
+    text-align: right;
+    color: white;
+  }
+  
+  .modalContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0.3em 0 0 0;
+    width: 100%;
+  }
+  
+  .emailModal-body {
+    padding: 1em;
+    font-family: avenir next;
+    height: 4em;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  
+  .phoneModal-body {
+    padding: 1em;
+    height: 4em;
+    font-family: avenir next;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  
+  .modal-footer {
+    background-color: #333;
+    color: white;
+  }
+
+}
+
+
+
+
+
+
+/* RESPONSIVE: MOBILE PHONES  */
+
+@media screen and (max-width: 450px){
+    nav a:not(:first-child){
+        display: none;
+    }
+
+    nav a.icon{
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 450px) {
+
+    .wrapper {
+      margin: 0;
+      border: 0;
+    }
+  
+   
+
+    nav.responsive{
+        position: relative;
+    }
+
+    nav.responsive.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+    nav {
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      width: 100%;
+      justify-content: space-evenly;
+      padding: 1.5em;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      z-index: 1;
+    }
+    .navLinks {
+      text-align: center;
+      padding: 0.5em 1em;
+      text-decoration: none;
+    }
+    a {
+      display: flex;
+      font-family: avenir next;
+      font-size: 1.5em;
+      font-weight: 100;
+      text-decoration: none;
+      color: white;
+    }
+  
+    a:hover {
+      color: rgb(106, 196, 188);
+    }
+  
+    a:active {
+      color: rgb(106, 196, 188);
+    }
+  
+    /* WELCOME DIV */
+    .welcomeCont {
+      width: 100%;
+      height: 47em;
+      background-image: url(img/img1.jpg);
+      background-size: cover;
+    }
+  
+    .welcome {
+      left: 0;
+      top: 23em;
+      width: 100%;
+      font-family: avenir next;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+  
+    .welcome2 {
+      position: relative;
+      left: 0;
+      top: 24em;
+      width: 100%;
+      text-align: center;
+      font-family: avenir next;
+      font-weight: bold;
+      color: white;
+    }
+  
+    /* SKILLS DIV */
+  
+    .skillsTitle {
+      display: flex;
+      padding: 3em 0 0 0;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 2.5em;
+      font-family: avenir next;
+      width: 100%;
+      color: gray;
+      text-decoration: underline;
+    }
+    .skillsCont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 65em;
+      background-color: white;
+    }
+  
+    .skillsDesc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      border-radius: 0.5em;
+      padding: 1em 5em;
+      font-size: 1.7em;
+      font-weight: 400;
+      font-family: avenir next;
+      color: rgb(56, 49, 49);
+    }
+  
+    .skillTag h2 {
+      text-decoration: underline;
+      font-size: 2em;
+      font-weight: 400;
+      padding: 1em 0 0 0;
+      justify-content: center;
+      font-family: avenir next;
+      color: #333;
+    }
+  
+    /* ABOUT DIV */
+    .aboutCont {
+      width: 100%;
+      height: 65em;
+      background-color: white;
+    }
+  
+    .aboutTitle {
+      display: flex;
+      padding: 5em 0 1em 0;
+      justify-content: center;
+      align-items: center;
+      font-weight: bolder;
+      font-size: 1.5em;
+      font-family: avenir next;
+      color: gray;
+      text-decoration: underline;
+    }
+  
+    .aboutDesc {
+     
+      width: 80%;
+      height: 25em;
+      padding: 0em 1px 0 3.3em;
+      font-size: 1.5em;
+      font-weight: 300;
+      font-family: avenir next;
+      color: rgb(56, 49, 49);
+    }
+  
+  
+  
+  
+    .myPic {
+      display: flex;
+      width: 8.6em;
+      height: 9.5em;
+      border-radius: 50%;
+      padding: 0.3em;
+      background-color: gray;
+    }
+    .myImg {
+      display: flex;
+      justify-content: center;
+      padding: 1em 0 0 0 ;
+    }
+  
+    /* CONTACT DIV */
+  
+    .contactTitle {
+      display: flex;
+      padding: 5em 0 0 0;
+      justify-content: center;
+      font-weight: bolder;
+      font-size: 1.5em;
+      font-family: avenir next;
+      width: 100%;
+      color: gray;
+      text-decoration: underline;
+    }
+    .contactCont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 63em;
+      background-color: white;
+    }
+  
+    .contactHeader{
+      font-weight: 300;
+      padding: 0 0 1em 0;
+      font-family: avenir next;
+    }
+  
+    .contactDesc {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      text-align: center;
+      width: 80%;
+      padding: 4em 5em;
+      font-size: 1.3em;
     
+    }
+  
+    .contactDesc a {
+      text-decoration: none;
+      display: block;
+    }
+  
+    span:hover {
+      color: rgb(106, 196, 188);
+      font-weight: 600;
+    }
+  
+    span {
+      color: #333;
+      font-size: 1em;
+      font-weight: 300;
+      display: block;
+      /* text-transform:uppercase; */
+      font-family: avenir next;
+      letter-spacing: 1px;
+    }
+  
+    i{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 4em;
+  
+    }
+    .social{
+        padding: 2em 1.5em 0 0;
+    }
+  
+    
+  
+    /* IMAGES FOR SITE */
+    .pic1 {
+      font-weight: bold;
+      font-family: avenir next;
+      width: 100%;
+      height: 65em;
+      background-image: url(img/img2.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    .pic2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-family: avenir next;
+      width: 100%;
+      height: 65em;
+      background-image: url(img/img3.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    .pic3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-family: avenir next;
+      width: 100%;
+      height: 45em;
+      background-image: url(img/img3.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 }
-
-.pic3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-family: avenir next;
-    width: 100%;
-    height: 45em;
-    background-image: url(img/img3.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+  
+    /* #email:focus,
+    #email:hover,
+    #phone:focus,
+    #phone:hover,
+    #resume:hover,
+    #linkedIn:hover,
+    #gitHub:hover {
+      cursor: pointer;
+      color: red;
+    }
+  } */
 
 /* h3{
     display: flex;
@@ -318,8 +1271,6 @@ span{
     padding: 8px, 24px;
     border-radius: .5em;
 } */
-
-
 
 /* #links:hover{
     color: blue;
@@ -366,18 +1317,6 @@ span{
     background-color:  rgb(106, 156, 196);
 }  */
 
-#email:focus,
-#email:hover,
-#phone:focus,
-#phone:hover,
-#resume:hover,
-#linkedIn:hover,
-#gitHub:hover{
-    cursor: pointer;
-    color: red;
-    
-}
-
 /* 
 #linkedIn{
     
@@ -398,179 +1337,3 @@ span{
     border-radius: 50%;
     background-color:  rgb(106, 156, 196);
 } */
- .emailModal{
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 9em;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);  
-}
-
-.phoneModal{
-    display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 9em;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-
-.emailModal-content{
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    padding: 0;
-    border: .2em solid #888;
-    width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-
-}
-
-.phoneModal-content{
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    /* justify-content: center; */
-    margin: auto;
-    padding: 0;
-    border: .2em solid #888;
-    width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-@-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top:0; opacity: 1}
-}
-
-@keyframes animatetop{
-    from {top:-300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-
-.closePhone:hover,
-.closePhone:focus {
-    color: rgb(106, 196, 188);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.closeEmail:hover,
-.closeEmail:focus {
-    color: rgb(106, 196, 188);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.closeEmail{
-    color: white;
-    font-size: 2em;
-    font-weight: 400;
-    padding: 0 2px 0 0;
-    float: right;
-}
-
-.closePhone{
-    color: white;
-    font-size: 2em;
-    font-weight: 400;
-    padding: 0 2px 0 0;
-    float: right;
-}
-
-/* .phoneTitle{
-    color: white;
-    width: 50%;
-} */
-.phoneModal-header{
-    background-color: #333;
-    font-family: avenir next;
-    padding: 0 4px 0 0;
-    font-weight: 100;
-}
-.emailModal-header{
-    background-color: #333;
-    font-family: avenir next;
-    font-weight: 100; 
-    padding: 0 4px 0 0; 
-
-}
-.modalTitle{
-    display: flex;
-   align-content: center;
-   justify-content: center;
-   font-family: avenir next;
-   font-size: 1.4em;
-   padding: 8px;
-   text-align: right;
-   color: white;
-
-}
-
-.modalContent{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: .3em 0 0 0;
-    width: 100%;
-
-}
-
-.emailModal-body{
-    padding: 1em;
-    font-family: avenir next;
-    height: 4em;
-    font-size: 1.5em;
-    font-weight: 300;
-}
-
-.phoneModal-body{
-    padding: 1em;
-    height: 4em;
-    font-family: avenir next;
-    font-size: 1.5em;
-    font-weight: 300;
-}
-
-.modal-footer {
-
-    background-color: #333;
-    color: white;
-  }
- 
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-

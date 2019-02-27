@@ -11,28 +11,29 @@
     
 </head>
 <body>
-    <div id="parallax">
-        <nav>
+    <div class="wrapper" id="parallax">
+        <nav class="navbar" id="nav">
             <a class="navLinks" href="#welcome">Welcome</a>
             <a class="navLinks" href="#skills">Skills</a>
             <a class="navLinks" href="#about">About</a>
             <a class="navLinks" href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><i class="fa fa-bars"></i></a>
         </nav>
     <div id="welcome" class="welcomeCont">
         <div class="welcome"><h1>Hi! My name is Kyle Klaiber. Full Stack Web Developer.</h2></div></br>
         <div class="welcome2"><h2>Welcome to my page.</h3></div>
     </div>
     <div id="skills" class="skillsCont">
-        <div class="title"><h2>Skills</h2></div>
-        <div id="skillTag" class="languages"><h4>Languages & Frameworks</h4></div>
+        <div class="skillsTitle"><h2>Skills</h2></div>
+        <div  class="skillTag"><h2>Languages & Frameworks</h2></div>
         <div class="skillsDesc">
                 ​ HTML5, ES6, CSS, JavaScript, Node.js, TypeScript, jQuery, Bootstrap, AngularJS,
                 Angular 6, ReactJS, Redux, NoSQL, SQL server, Express, Mongodb, Mongoose, Passport
             </div>
-            <div id="skillTag" class="tech"><h4>Technologies</h4></div>
+            <div  class="skillTag"><h2>Technologies</h2></div>
             <div class="skillsDesc">​Visual Studio Code, Git, GitHub, Heroku, mLab, REST, AJAX, JSON, XML, AWS, Cordova, Ionic​
             </div>
-            <div id="skillTag" class="other"><h4>Other Skills</h4></div>
+            <div  class="skillTag"><h2>Other Skills</h2></div>
             <div class="skillsDesc">​Agile Project Management, Agile Methodologies, Scrum methodologies, UX/UI, Leadership, Event Management, Collaboration, Leadership Development</div>
 
     </div>
@@ -41,25 +42,29 @@
         <div class="imgTitleCont">
             <div class="aboutTitle"><h2>About Me</h2></div>
         </div>
-            <div class="aboutDesc"><h3>I graduated from Bethel School of Technology, a first of its kind, faith-based coding bootcamp in 2018. I completed their Full Stack Web Development program in JavaScript with a 4.0 and gained incredible insight in how to bring character and integrity to the workplace. Along with Bethel's "Coder For Life" program, I am on a life long journey of learning and sharpening my craft. I am passionate about creating spaces where beauty meets practicality. I am geared to find solutions to problems and fully understand areas I am working with to bring excellence and innovation to change the world. I believe we are living in an amazing time where we can use our minds and imaginations to create things never dreamed of before. To inspire the following generations with dreams and ideas to use technology to bring about a better way of life.</h3></div>
+            <div class="aboutDesc"><p>I graduated from Bethel School of Technology, a first of its kind, faith-based coding bootcamp in 2018. I completed their Full Stack Web Development program in JavaScript with a 4.0 and gained incredible insight in how to bring character and integrity to the workplace. Along with Bethel's "Coder For Life" program, I am on a life long journey of learning and sharpening my craft. I am passionate about creating spaces where beauty meets practicality. I am geared to find solutions to problems and fully understand areas I am working with to bring excellence and innovation to change the world. I believe we are living in an amazing time where we can use our minds and imaginations to create things never dreamed of before. To inspire the following generations with dreams and ideas to use technology to bring about a better way of life.</p></div>
             <div class="myImg"><img src="img/me.jpg" alt="" class="myPic"></div>
 
         </div>
     <div class="pic2"></div>
     <div id="contact" class="contactCont">
             <div class="contactTitle"><h2>Contact</h2></div>
+            <div>
+                <h2 class="contactHeader">Want to know more?</h2>
+                <h3 class="contactHeader">Please feel free to contact me and check out my resumé and profiles below!</h3>
+                  </div>
             <div class="contactDesc">
-              
-                        <a class="social" id="linkedIn"  target="_blank" title="LinkedIn Profile" href="https://www.linkedin.com/in/kyle-klaiber-4b7468164/"><i class="fab fa-linkedin" style="font-size: 3.1em; color: rgb(26, 163, 152)"></i>
+                        <a class="social" id="linkedIn"  target="_blank" title="LinkedIn Profile" href="https://www.linkedin.com/in/kyle-klaiber-4b7468164/"><i class="fab fa-linkedin" style=" color: rgb(221, 45, 45)"></i>
                             <span>LinkedIn</span></a>
-                        <a class="social" id="gitHub"  target="_blank" title="GitHub Profile" href="https://github.com/Kklaiber"><i class="fab fa-github-square"  style="font-size: 3.1em; color: rgb(26, 163, 152)"></i>
+                        <a class="social" id="gitHub"  target="_blank" title="GitHub Profile" href="https://github.com/Kklaiber"><i class="fab fa-github-square"  style=" color: rgb(26, 163, 152)"></i>
                                 <span>GitHub</span></a>
-                        <a class="social" id="phone" title="Phone Number" ><i class="fas fa-phone-square" style="font-size:3.1em; color: rgb(26, 163, 152)"></i>
+                        <a class="social" id="phone" title="Phone Number" href="tel: 9253909788"><i class="fas fa-phone-square" style=" color: coral"></i>
                             <span>Call</span></a>
-                        <a class="social" id="email" title="Email"><i class="fas fa-envelope-square" style="font-size: 3.1em; color: rgb(26, 163, 152)"></i>
+                        <a class="social" id="email" title="Email" href="mailto: kylesklaiber@gmail.com"><i class="fas fa-envelope-square" style=" color: purple"></i>
                             <span>Email</span></a>
-                        <a class="social" id="resume" target="_blank" title="My Resumé" href="https://docs.google.com/document/d/19i_fQOFt2Rs-VzRpypdcngLwya4_mw7MJ-vYDYCYZXw/edit?usp=sharing"><i class="far fa-file" style="font-size: 2.8em; color: rgb(26, 163, 152)"></i>
+                        <a class="social" id="resume" target="_blank" title="My Resumé" href="https://docs.google.com/document/d/19i_fQOFt2Rs-VzRpypdcngLwya4_mw7MJ-vYDYCYZXw/edit?usp=sharing"><i class="far fa-file" style=" color: rgb(75, 185, 219)"></i>
                          <span>Resumé</span></a>
+                         
             </div>
     </div>
 </div>

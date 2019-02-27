@@ -12,7 +12,6 @@ var phoneBtn = document.getElementById("phone");
 
 var span = document.getElementsByClassName("closeEmail")[0];
 var span2 = document.getElementsByClassName("closePhone")[0]
-// var span2 = document.getElementsByClassName("close")[0];
 
 phoneBtn.onclick = function() {
   phoneModal.style.display = "block";
@@ -31,11 +30,7 @@ span2.onclick = function(){
     phoneModal.style.display = "none"
 }
 
-
-
-
-
-
+//Close modal when click anywhere outside of modal
 window.onclick = function(event) {
   if (event.target == phoneModal) {
     phoneModal.style.display = "none";
@@ -45,9 +40,16 @@ window.onclick = function(event) {
 };
 
 
+//Sandwich menu bar for mobile
+function mobileMenu(){
+    var x = document.getElementById('nav');
 
-
-
+    if(x.className === 'navbar') {
+        x.className += ' responsive';
+    } else {
+        x.className = 'navbar'
+    }
+}
 
 
 
