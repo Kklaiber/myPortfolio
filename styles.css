@@ -93,19 +93,21 @@ a:active {
   color: white;
 }
 
-.title {
-  display: flex;
-  padding: 4em 0 0 0;
-  justify-content: center;
-  font-weight: bolder;
-  font-size: 1.5em;
-  font-family: avenir next;
-  width: 100%;
-  color: gray;
-  text-decoration: underline;
-}
+
 
 /* SKILLS DIV */
+.skillsTitle {
+    display: flex;
+    padding: 4em 0 0 0;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: avenir next;
+    width: 100%;
+    color: gray;
+    text-decoration: underline;
+  }
+
 .skillsCont {
   display: flex;
   flex-direction: column;
@@ -115,7 +117,7 @@ a:active {
   background-color: white;
 }
 
-.skillsDesc {
+.skillsDesc p{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,20 +125,18 @@ a:active {
   width: 80%;
   border-radius: 0.5em;
   padding: 1em 5em;
-  font-size: 1.3em;
-  font-weight: 200;
-  font-family: "Trebuchet MS";
+  font-size: 1.1em;
+  font-weight: 300;
+  font-family: "avenir next";
   color: rgb(56, 49, 49);
 }
 
-#skillTag {
+.skillTag {
   text-decoration: underline;
-  font-size: 1.7em;
+  font-size: 1em;
   font-weight: 100;
   padding: 1em 0 0 0;
   justify-content: center;
-  font-weight: bolder;
-  font-size: 1.4em;
   font-family: avenir next;
   color: #333;
 }
@@ -169,10 +169,10 @@ a:active {
   align-items: center;
   text-align: center;
   width: 80%;
-  height: 20em;
-  padding: 0 0 0 7em;
-  font-size: 1em;
-  font-weight: 200;
+  height: 15em;
+  padding: 1em 0 1em 7em;
+  font-size: 1.1em;
+  font-weight: 400;
   font-family: avenir next;
   color: rgb(56, 49, 49);
 }
