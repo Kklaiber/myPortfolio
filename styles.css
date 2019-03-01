@@ -13,40 +13,64 @@ body {
   padding: 0px;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: transparent;
 }
-
-
-/* NAVBAR SECTION */
-.navbar {
-  overflow: hidden;
+.nav2 {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  background-color: transparent;
+}
+.navlinks2{
+    text-align: right;
+  height: 70px;
+  line-height: 70px;
+  background-color: transparent;
+}
+.menu {
   display: flex;
-  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
   position: fixed;
   width: 100%;
-  justify-content: space-evenly;
-  padding: 1.5em;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
   z-index: 1;
-  height: 3.5em;
+  /* line-height: 60px; */
+  /* display: none; */
 }
 
-nav .icon {
-    display: none;
-}
-
-.navLinks  {
-  padding: 0.5em 1em;
-  display: flex;
-  font-family: avenir next;
-  font-size: 1.5em;
-  font-weight: 100;
+.menu a {
   text-decoration: none;
+  margin: 0 0px;
+  font-family: avenir next;
+  color: white;
+  font-weight: 200;
+  /* line-height: 60px; */
+  font-size: 1.5em;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
   color: white;
 }
+
+#toggle {
+  display: none;
+}
+
+/* NAVBAR SECTION */
+
+
+nav .icon {
+  display: none;
+}
+
+
 
 a:hover {
   color: rgb(106, 196, 188);
@@ -89,20 +113,18 @@ a:active {
   color: white;
 }
 
-
-
 /* SKILLS DIV */
 .skillsTitle {
-    display: flex;
-    padding: 4em 0 0 0;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 1.5em;
-    font-family: avenir next;
-    width: 100%;
-    color: gray;
-    text-decoration: underline;
-  }
+  display: flex;
+  padding: 4em 0 0 0;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  font-family: avenir next;
+  width: 100%;
+  color: gray;
+  text-decoration: underline;
+}
 
 .skillsCont {
   display: flex;
@@ -113,7 +135,7 @@ a:active {
   background-color: white;
 }
 
-.skillsDesc p{
+.skillsDesc p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,16 +216,16 @@ a:active {
 
 /* CONTACT DIV */
 .contactTitle {
-    display: flex;
-    padding: 3em 0 2em 0;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 1.5em;
-    font-family: avenir next;
-    width: 100%;
-    color: gray;
-    text-decoration: underline;
-  }
+  display: flex;
+  padding: 3em 0 2em 0;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  font-family: avenir next;
+  width: 100%;
+  color: gray;
+  text-decoration: underline;
+}
 
 .contactCont {
   display: flex;
@@ -232,18 +254,18 @@ a:active {
   display: block;
 }
 
-.contactHeader{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    padding: 1em 0 0 0;
-    font-family: avenir next;
-  }
+.contactHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  padding: 1em 0 0 0;
+  font-family: avenir next;
+}
 
-  i{
-      font-size: 3.1em;
-  }
+i {
+  font-size: 3.1em;
+}
 
 span:hover {
   color: rgb(106, 196, 188);
@@ -260,7 +282,6 @@ span {
   font-family: avenir next;
   letter-spacing: 1px;
 }
-
 
 /* IMAGES FOR SITE */
 .pic1 {
@@ -487,11 +508,6 @@ span {
 
 
 
-
-
-
-
-
 /* RESPONSIVE: TABLET  */
 @media only screen and (max-width: 1050px) {
   .wrapper {
@@ -512,17 +528,6 @@ span {
     background-color: #333;
     z-index: 1;
   }
- 
-  .navLinks {
-    display: flex;
-    font-family: avenir next;
-    text-align: center;
-    padding: 0.5em 1em;
-    font-size: 1.5em;
-    font-weight: 100;
-    text-decoration: none;
-    color: white;
-  }
 
   a:hover {
     color: rgb(106, 196, 188);
@@ -539,7 +544,6 @@ span {
     background-image: url(img/img1.jpg);
     background-size: cover;
   }
-
 
   .welcome {
     left: 0;
@@ -583,7 +587,7 @@ span {
     background-color: white;
   }
 
-  .skillsDesc p{
+  .skillsDesc p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -627,7 +631,6 @@ span {
   }
 
   .aboutDesc {
-   
     width: 80%;
     height: 25em;
     padding: 0em 1px 0 3.3em;
@@ -648,7 +651,7 @@ span {
   .myImg {
     display: flex;
     justify-content: center;
-    padding: 1em 0 0 0 ;
+    padding: 1em 0 0 0;
   }
 
   /* CONTACT DIV */
@@ -673,7 +676,7 @@ span {
     background-color: white;
   }
 
-  .contactHeader{
+  .contactHeader {
     font-weight: 300;
     display: flex;
     justify-content: center;
@@ -693,7 +696,6 @@ span {
     width: 80%;
     padding: 2em 5em;
     font-size: 1.3em;
-  
   }
 
   .contactDesc a {
@@ -701,12 +703,12 @@ span {
     display: block;
   }
 
-.social{
+  .social {
     padding: 2em 1.5em 0 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+  }
 
   span:hover {
     color: rgb(106, 196, 188);
@@ -721,7 +723,6 @@ span {
     font-family: avenir next;
     letter-spacing: 1px;
   }
-
 
   /* IMAGES FOR SITE */
   .pic1 {
@@ -767,7 +768,7 @@ span {
   }
 
   /* MODAL STYLING */
-.emailModal {
+  .emailModal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -780,7 +781,7 @@ span {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
   }
-  
+
   .phoneModal {
     display: none;
     position: fixed;
@@ -794,7 +795,7 @@ span {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
   }
-  
+
   .emailModal-content {
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -808,11 +809,10 @@ span {
     animation-name: animatetop;
     animation-duration: 0.4s;
   }
-  
+
   .phoneModal-content {
     position: relative;
     background-color: rgb(255, 255, 255);
-    /* justify-content: center; */
     margin: auto;
     padding: 0;
     border: 0.2em solid #888;
@@ -823,7 +823,7 @@ span {
     animation-name: animatetop;
     animation-duration: 0.4s;
   }
-  
+
   @-webkit-keyframes animatetop {
     from {
       top: -300px;
@@ -834,7 +834,7 @@ span {
       opacity: 1;
     }
   }
-  
+
   @keyframes animatetop {
     from {
       top: -300px;
@@ -845,21 +845,21 @@ span {
       opacity: 1;
     }
   }
-  
+
   .closePhone:hover,
   .closePhone:focus {
     color: rgb(106, 196, 188);
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .closeEmail:hover,
   .closeEmail:focus {
     color: rgb(106, 196, 188);
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .closeEmail {
     color: white;
     font-size: 2em;
@@ -867,7 +867,7 @@ span {
     padding: 0 2px 0 0;
     float: right;
   }
-  
+
   .closePhone {
     color: white;
     font-size: 2em;
@@ -875,7 +875,7 @@ span {
     padding: 0 2px 0 0;
     float: right;
   }
-  
+
   .phoneModal-header {
     background-color: #333;
     font-family: avenir next;
@@ -898,7 +898,7 @@ span {
     text-align: right;
     color: white;
   }
-  
+
   .modalContent {
     display: flex;
     justify-content: center;
@@ -906,7 +906,7 @@ span {
     padding: 0.3em 0 0 0;
     width: 100%;
   }
-  
+
   .emailModal-body {
     padding: 1em;
     font-family: avenir next;
@@ -914,7 +914,7 @@ span {
     font-size: 1.5em;
     font-weight: 300;
   }
-  
+
   .phoneModal-body {
     padding: 1em;
     height: 4em;
@@ -922,15 +922,12 @@ span {
     font-size: 1.5em;
     font-weight: 300;
   }
-  
+
   .modal-footer {
     background-color: #333;
     color: white;
   }
-
 }
-
-
 
 
 
@@ -943,407 +940,466 @@ span {
 
 /* RESPONSIVE: MOBILE PHONES  */
 
-@media screen and (max-width: 450px){
-    .navLinks{
-        display: none;
-    }
-
-    .navbar{
-        padding: 0em;
-        height: 3em;
-    }
-
-
-    
-}
 @media screen and (max-width: 450px) {
+  .wrapper {
+    margin: 0;
+    border: 0;
+  }
 
-    .wrapper {
-      margin: 0;
-      border: 0;
-    }
+  .nav2 {
+    height: 0px;
 
-    nav.responsive{
-        position: relative;
-    }
+  }
+  .navlinks2{
+      background-color: transparent;
+  }
 
-    /* nav.responsive.icon{
-        position: absolute;
-        right: 0;
-        top: 0;
+  label {
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    float: right;
 
-    } */
+    position:fixed;
+    top:10px;
+    left:370px;
+    -moz-transition:all 600ms ease-in;
+    -webkit-transition:all 600ms ease-in;
+    -o-transition:all 600ms ease-in;
+    transition:all 600ms ease-in;
+    z-index:500;
+  }
 
-     nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-     
-      } 
-       
-    .navbar {
-      overflow: hidden;
-      display: flex;
-      flex-direction: row; 
-      position: fixed; 
-      width: 100%;
-      justify-content: flex-end;
-      padding: 1em;
-      list-style-type: none;
-      margin: 0;
-      overflow: hidden;
-      background-color:transparent;
-    }
-
-    nav .icon{
-        display: flex;
-       display: block;
-        color: white;
-        float: right;
-        padding: 3px 35px 0 0;
-        font-size: 1em;
-    }
-    .navLinks {
-      text-align: center;
-      padding: 0.5em 1em;
-      text-decoration: none;
-    }
-    /* a.social {
-      display: flex;
-      font-family: avenir next;
-      font-size: 1.5em;
-      font-weight: 100;
-      text-decoration: none;
-      color: white;
-    } */
-  
-    .navLinks:hover {
-      color: rgb(106, 196, 188);
-    }
-  
-    a:active {
-      color: rgb(106, 196, 188);
-    }
-  
-    /* WELCOME DIV */
-    .welcomeCont {
-      width: 100%;
-      height: 47em;
-      background-image: url(img/img1.jpg);
-      background-size: cover;
-    }
-  
-    .welcome {
-      left: 0;
-      top: 23em;
-      width: 100%;
-      font-family: avenir next;
-      font-weight: bold;
-      color: rgb(255, 255, 255);
-    }
-  
-    .welcome2 {
-      position: relative;
-      left: 0;
-      top: 24em;
-      width: 100%;
-      text-align: center;
-      font-family: avenir next;
-      font-weight: bold;
-      color: white;
-    }
-  
-    /* SKILLS DIV */
-  
-    .skillsTitle {
-      display: flex;
-      padding: 3em 0 0 0;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 2.5em;
-      font-family: avenir next;
-      width: 100%;
-      color: gray;
-      text-decoration: underline;
-    }
-    .skillsCont {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 65em;
-      background-color: white;
-    }
-  
-    .skillsDesc {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 80%;
-      border-radius: 0.5em;
-      padding: 1em 5em;
-      font-size: 1.7em;
-      font-weight: 400;
-      font-family: avenir next;
-      color: rgb(56, 49, 49);
-    }
-  
-    .skillTag h2 {
-      text-decoration: underline;
-      font-size: 2em;
-      font-weight: 400;
-      padding: 1em 0 0 0;
-      justify-content: center;
-      font-family: avenir next;
-      color: #333;
-    }
-  
-    /* ABOUT DIV */
-    .aboutCont {
-      width: 100%;
-      height: 65em;
-      background-color: white;
-    }
-  
-    .aboutTitle {
-      display: flex;
-      padding: 5em 0 1em 0;
-      justify-content: center;
-      align-items: center;
-      font-weight: bolder;
-      font-size: 1.5em;
-      font-family: avenir next;
-      color: gray;
-      text-decoration: underline;
-    }
-  
-    .aboutDesc {
-     
-      width: 80%;
-      height: 25em;
-      padding: 0em 1px 0 3.3em;
-      font-size: 1.5em;
-      font-weight: 300;
-      font-family: avenir next;
-      color: rgb(56, 49, 49);
-    }
-  
-  
-  
-  
-    .myPic {
-      display: flex;
-      width: 8.6em;
-      height: 9.5em;
-      border-radius: 50%;
-      padding: 0.3em;
-      background-color: gray;
-    }
-    .myImg {
-      display: flex;
-      justify-content: center;
-      padding: 1em 0 0 0 ;
-    }
-  
-    /* CONTACT DIV */
-  
-    .contactTitle {
-      display: flex;
-      padding: 5em 0 0 0;
-      justify-content: center;
-      font-weight: bolder;
-      font-size: 1.5em;
-      font-family: avenir next;
-      width: 100%;
-      color: gray;
-      text-decoration: underline;
-    }
-    .contactCont {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 63em;
-      background-color: white;
-    }
-  
-    .contactHeader{
-      font-weight: 300;
-      padding: 0 0 1em 0;
-      font-family: avenir next;
-    }
-  
-    .contactDesc {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      text-align: center;
-      width: 80%;
-      padding: 4em 5em;
-      font-size: 1.3em;
-    
-    }
-  
-    /* .contactDesc a {
-      text-decoration: none;
-      display: block;
-    } */
-  
-    span:hover {
-      color: rgb(106, 196, 188);
-      font-weight: 600;
-    }
-  
-    span {
-      color: #333;
-      font-size: 1em;
-      font-weight: 300;
-      display: block;
-      /* text-transform:uppercase; */
-      font-family: avenir next;
-      letter-spacing: 1px;
-    }
-  
-    i.social{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        font-size: 4em;
-  
-    }
-    .social{
-        padding: 2em 1.5em 0 0;
-    }
-  
-    
-  
-    /* IMAGES FOR SITE */
-    .pic1 {
-      font-weight: bold;
-      font-family: avenir next;
-      width: 100%;
-      height: 65em;
-      background-image: url(img/img2.jpg);
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
-    .pic2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-family: avenir next;
-      width: 100%;
-      height: 65em;
-      background-image: url(img/img3.jpg);
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  
-    .pic3 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-family: avenir next;
-      width: 100%;
-      height: 45em;
-      background-image: url(img/img3.jpg);
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-}
-  
-    /* #email:focus,
-    #email:hover,
-    #phone:focus,
-    #phone:hover,
-    #resume:hover,
-    #linkedIn:hover,
-    #gitHub:hover {
-      cursor: pointer;
-      color: red;
-    }
-  } */
-
-/* h3{
-    display: flex;
+  .menu {
     text-align: center;
-    width: 70%;
-    padding: 8px, 24px;
-    border-radius: .5em;
-} */
+    width: 50%;
+    display: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(145, 144, 144);
+    position: fixed;
 
-/* #links:hover{
-    color: blue;
-} */
-/* .gitHubCont{
-    border-radius: 50%;
-    background-color:  rgb(106, 156, 196);
-}
+  }
 
-#gitHub{
-    background-image: url('icons/gitHub.png');
-    height: 5em;
-    width: 5em;
-    background-size: cover;
-    filter: grayscale(100%);
+  .menu a {
+    display: block;
+    clear: right;
+    background-color: rgba(0, 174, 255, 0.589);
+    font-weight: 400;
+    border-bottom: 1.5px solid rgb(145, 144, 144);
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+  #toggle:checked + .nav2 {
+      height: 70px;
+  }
  
-}
+  .nav2{
+      background-color: transparent;
+  }
 
+  .navLinks:hover {
+    color: rgb(106, 196, 188);
+  }
 
-.githubCont:hover{
-   filter: invert(100%);
-}
+  a:active {
+    color: rgb(106, 196, 188);
+    background-color: rgba(255, 238, 0, 0.589)
+  }
 
-#phone{
-    background-image: url('icons/phone.png');
-    height: 9em;
-    width: 9em;
+  /* WELCOME DIV */
+  .welcomeCont {
+    width: 100%;
+    height: 47em;
+    background-image: url(img/img1.jpg);
     background-size: cover;
-    filter: grayscale(100%);
+  }
+
+  .welcome {
+    left: 0;
+    top: 18em;
+    width: 100%;
+    font-family: avenir next;
+    font-weight: bold;
+    font-size: .9em;
+    color: rgb(255, 255, 255);
+  }
+
+  .welcome2 {
+    left: 0;
+    top: 24em;
+    width: 100%;
+    text-align: center;
+    font-family: avenir next;
+    font-weight: bold;
+    font-size: .7em;
+    color: white;
+  }
+
+  /* SKILLS DIV */
+
+  .skillsTitle {
+    display: flex;
+    padding: 1em 0 0 0;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: avenir next;
+    width: 100%;
+    color: gray;
+    text-decoration: underline;
+  }
+  .skillsCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50em;
+    background-color: white;
+  }
+
+  .skillsDesc p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    border-radius: 0.5em;
+    padding: .6em 0 0 1em;
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: avenir next;
+    color: rgb(56, 49, 49);
+  }
+
+
+.skillsDesc{
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-.phoneCont{
+
+.skillsDesc h2{
+    padding: 0;
+}
+
+  .skillTag h2 {
+    text-decoration: underline;
+    font-size: 2em;
+    font-weight: 400;
+    padding: .5em 0 0 0;
+    justify-content: center;
+    font-family: avenir next;
+    color: #333;
+  }
+
+  /* ABOUT DIV */
+  .aboutCont {
+    width: 100%;
+    height: 80em;
+    background-color: white;
+  }
+
+  .aboutTitle {
+    display: flex;
+    padding: 1.5em 0 1em 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: avenir next;
+    color: gray;
+    text-decoration: underline;
+  }
+
+  .aboutDesc {
+    height: 25em;
+    padding: 6.5em 0 0 1.7em ;
+    font-size: 1.4em;
+    width: 80%;
+    font-weight: 300;
+    font-family: avenir next;
+    color: rgb(56, 49, 49);
+  }
+
+  .myPic {
+    display: flex;
+    width: 8.6em;
+    height: 9.5em;
     border-radius: 50%;
-    background-color:  rgb(106, 156, 196);
-}*/
+    padding: 0.3em;
+    background-color: gray;
+  }
+  .myImg {
+    display: flex;
+    justify-content: center;
+    padding: 13em 0 0 0;
+  }
 
-/* #email{
-    height: 10em;
-    width: 2em;
+  /* CONTACT DIV */
+
+  .contactTitle {
+    display: flex;
+    padding: 1.5em 0 0 0;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: avenir next;
+    width: 100%;
+    color: gray;
+    text-decoration: underline;
+  }
+  .contactCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 47em;
+    background-color: white;
+  }
+
+  .contactHeader {
+    font-weight: 300;
+    padding: 1em 0 0 1em;
+    font-family: avenir next;
+  }
+
+  .contactDesc {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 90%;
+    padding: .5em 5em;
+    font-size: 1.3em;
+  }
+
+  span:hover {
+    color: rgb(106, 196, 188);
+    font-weight: 600;
+  }
+
+  span {
+    color: #333;
+    font-size: 1em;
+    font-weight: 300;
+    display: block;
+    font-family: avenir next;
+    letter-spacing: 1px;
+  }
+
+  i.social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 4em;
+  }
+  .social {
+    padding: 2em 1.5em 0 0;
+  }
+
+  /* IMAGES FOR SITE */
+  .pic1 {
+    font-weight: bold;
+    font-family: avenir next;
+    width: 100%;
+    height: 55em;
+    background-image: url(img/img2.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pic2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: avenir next;
+    width: 100%;
+    height: 55em;
+    background-image: url(img/img3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pic3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: avenir next;
+    width: 100%;
+    height: 45em;
+    background-image: url(img/img3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* MODAL STYLING */
+  .emailModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 16em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .phoneModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 16em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .emailModal-content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 0;
+    border: 0.2em solid #888;
+    width: 85%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  .phoneModal-content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 0;
+    border: 0.2em solid #888;
+    width: 85%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .closePhone:hover,
+  .closePhone:focus {
+    color: rgb(106, 196, 188);
     text-decoration: none;
+    cursor: pointer;
+  }
+
+  .closeEmail:hover,
+  .closeEmail:focus {
+    color: rgb(106, 196, 188);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .closeEmail {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 2px 0 0;
+    float: right;
+  }
+
+  .closePhone {
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0 2px 0 0;
+    float: right;
+  }
+
+  .phoneModal-header {
+    background-color: #333;
+    font-family: avenir next;
+    padding: 0 4px 0 0;
+    font-weight: 100;
+  }
+  .emailModal-header {
+    background-color: #333;
+    font-family: avenir next;
+    font-weight: 100;
+    padding: 0 4px 0 0;
+  }
+  .modalTitle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: avenir next;
+    font-size: 1.4em;
+    padding: 8px;
+    text-align: right;
+    color: white;
+  }
+
+  .modalContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0 0 .5em 0;
+    width: 100%;
+  }
+
+  .emailModal-body {
+    padding: 1em;
+    font-family: avenir next;
+    height: 4em;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+  .phoneModal-body {
+    padding: 1em;
+    height: 4em;
+    font-family: avenir next;
+    font-size: 1.3em;
+    font-weight: 300;
+  }
+
+  .modal-footer {
+    background-color: #333;
+    color: white;
+  }
 }
-.emailCont{
-    border-radius: 50%;
-    background-color:  rgb(106, 156, 196);
-}  */
 
-/* 
-#linkedIn{
-    
-    background-size: cover;
-}
-
-
-#resume{
-    background-image: url('icons/resume.png');
-    height: 4.5em;
-    width: 4.5em;
-    background-size: cover;
-    filter: grayscale(100%);
-    
-}
-
-.resumeCont{
-    border-radius: 50%;
-    background-color:  rgb(106, 156, 196);
-} */
