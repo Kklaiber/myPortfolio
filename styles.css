@@ -970,10 +970,10 @@ body {
     cursor: pointer;
     width: 26px;
     float: right;
-
+    color: springgreen;
     position:fixed;
     top:10px;
-    left:340px;
+    left:320px;
     -moz-transition:all 600ms ease-in;
     -webkit-transition:all 600ms ease-in;
     -o-transition:all 600ms ease-in;
