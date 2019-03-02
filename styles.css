@@ -142,7 +142,7 @@ a:active {
   text-align: center;
   width: 80%;
   border-radius: 0.5em;
-  padding: 1em 5em;
+  padding: 1em 7em;
   font-size: 1.1em;
   font-weight: 300;
   font-family: "avenir next";
@@ -946,6 +946,17 @@ span {
     border: 0;
   }
 
+  html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: transparent;
+}
   .nav2 {
     height: 0px;
 
@@ -962,7 +973,7 @@ span {
 
     position:fixed;
     top:10px;
-    left:370px;
+    left:340px;
     -moz-transition:all 600ms ease-in;
     -webkit-transition:all 600ms ease-in;
     -o-transition:all 600ms ease-in;
