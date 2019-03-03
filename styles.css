@@ -1066,7 +1066,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 50em;
+    height: 55em;
     background-color: white;
   }
 
@@ -1101,6 +1101,7 @@ body {
     font-weight: 400;
     padding: .5em 0 0 0;
     justify-content: center;
+    text-align: center;
     font-family: avenir next;
     color: #333;
   }
@@ -1108,7 +1109,7 @@ body {
   /* ABOUT DIV */
   .aboutCont {
     width: 100%;
-    height: 80em;
+    height: 83em;
     background-color: white;
   }
 
@@ -1126,7 +1127,7 @@ body {
 
   .aboutDesc {
     height: 25em;
-    padding: 6.5em 0 0 1.7em ;
+    padding: 9.5em 0 0 1.7em ;
     font-size: 1.4em;
     width: 80%;
     font-weight: 300;
@@ -1145,7 +1146,7 @@ body {
   .myImg {
     display: flex;
     justify-content: center;
-    padding: 13em 0 0 0;
+    padding: 15em 0 0 0;
   }
 
   /* CONTACT DIV */
