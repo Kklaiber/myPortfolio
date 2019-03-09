@@ -15,97 +15,77 @@ body {
   scroll-behavior: smooth;
   background-color: transparent;
 }
-.nav2 {
-  text-align: right;
-  height: 70px;
-  line-height: 70px;
-  background-color: transparent;
+.container-fluid{
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-.navlinks2{
-    text-align: right;
-  height: 70px;
-  line-height: 70px;
-  background-color: transparent;
-}
-.menu {
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
+
+
+/* NAVBAR SECTION */
+.navbar {
+  overflow: hidden;
   position: fixed;
   width: 100%;
   list-style-type: none;
   overflow: hidden;
   background-color: #333;
   z-index: 1;
-  /* line-height: 60px; */
-  /* display: none; */
+  padding: .2em;
 }
-
-.menu a {
-  text-decoration: none;
-  margin: 0 0px;
-  font-family: avenir next;
-  color: white;
-  font-weight: 200;
-  /* line-height: 60px; */
-  font-size: 1.5em;
+.navbar-brand img{
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+ 
 }
-
-label {
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  display: none;
-  color: white;
+.navbar-nav li {
+padding-right: 60px;
 }
-
-#toggle {
-  display: none;
+.nav-link{
+  color: rgb(240, 240, 240);
+  font-size: 1.2em !important;
 }
-
-/* NAVBAR SECTION */
-
-
+.nav-link:hover {
+  color: rgb(106, 196, 188);
+}
+.nav-link:active {
+  color: rgb(106, 196, 188);
+}
 nav .icon {
   display: none;
 }
-
-
-
-a:hover {
-  color: rgb(106, 196, 188);
+.fa-bars{
+  font-size: 2em;
+  color: springgreen;
 }
 
-a:active {
-  color: rgb(106, 196, 188);
-}
 
 /* WELCOME DIV */
 .welcomeCont {
   width: 100%;
-  height: 50em;
+  height: 100%;
   background-image: url(img/img1.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 2em;
 }
-
 .welcome {
   position: relative;
   left: 0;
-  top: 14em;
+  top: 18em;
   width: 100%;
   text-align: center;
   font-family: avenir next;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
-
 .welcome2 {
   position: relative;
   left: 0;
-  top: 13em;
+  top: 17em;
   width: 100%;
   text-align: center;
   font-family: avenir next;
@@ -115,38 +95,19 @@ a:active {
 
 /* SKILLS DIV */
 .skillsTitle {
-  display: flex;
-  padding: 4em 0 0 0;
-  justify-content: center;
+  padding: 4em 0 2em 0;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: avenir next;
-  width: 100%;
   color: gray;
   text-decoration: underline;
 }
-
-.skillsCont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 45em;
-  background-color: white;
-}
-
 .skillsDesc p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  border-radius: 0.5em;
-  padding: 1em 7em;
+  padding: .5em 14em;
   font-size: 1.1em;
   font-weight: 300;
   font-family: "avenir next";
-  color: rgb(56, 49, 49);
+  color: rgb(56, 49, 49); 
 }
 
 .skillTag {
@@ -154,53 +115,26 @@ a:active {
   font-size: 1em;
   font-weight: 100;
   padding: 1em 0 0 0;
-  justify-content: center;
   font-family: avenir next;
-  color: #333;
+  color: rgb(73, 72, 72);
 }
 
 /* ABOUT DIV */
-.aboutCont {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 45em;
-  background-color: white;
-}
-
 .aboutTitle {
-  display: flex;
-  /* padding: 9em 0 2em 17em; */
-  padding: 3em 0 0 0;
-  justify-content: center;
-  align-items: center;
+  padding: 3em 0 1em 0;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: avenir next;
   color: gray;
   text-decoration: underline;
 }
-
 .aboutDesc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  height: 15em;
-  padding: 1em 0 1em 7em;
+  padding: 1em 9em 3em 9em;
   font-size: 1.1em;
   font-weight: 400;
   font-family: avenir next;
   color: rgb(56, 49, 49);
 }
-
-.imgTitleCont {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
 .myPic {
   display: flex;
   width: 7em;
@@ -212,40 +146,26 @@ a:active {
 .myImg {
   display: flex;
   justify-content: center;
+  padding-bottom: 3em;
 }
 
 /* CONTACT DIV */
 .contactTitle {
-  display: flex;
-  padding: 3em 0 2em 0;
-  justify-content: center;
+  padding: 3em 0 1em 0;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: avenir next;
-  width: 100%;
   color: gray;
   text-decoration: underline;
 }
-
-.contactCont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 35em;
-  background-color: white;
-}
-
 .contactDesc {
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 80%;
-  padding: 4em 5em;
   font-size: 1em;
   font-weight: 200;
-
+  padding: 10em, 15em;
   color: rgb(56, 49, 49);
 }
 
@@ -255,11 +175,13 @@ a:active {
 }
 
 .contactHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 300;
-  padding: 1em 0 0 0;
+  padding: 1em 0 0;
+  font-family: avenir next;
+}
+.contactHeader2{
+  font-weight: 300;
+  padding: 1em 0 3em;
   font-family: avenir next;
 }
 
@@ -283,6 +205,15 @@ span {
   letter-spacing: 1px;
 }
 
+/* FOOTER SECTION */
+footer{
+  background-color: #333;
+  color: white;
+  font-size: 1.1em;
+  padding: 1em;
+  font-family: avenir next;
+}
+
 /* IMAGES FOR SITE */
 .pic1 {
   display: flex;
@@ -291,7 +222,7 @@ span {
   font-weight: bold;
   font-family: avenir next;
   width: 100%;
-  height: 45em;
+  height: 100%;
   background-image: url(img/img2.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -306,7 +237,7 @@ span {
   font-weight: bold;
   font-family: avenir next;
   width: 100%;
-  height: 45em;
+  height: 100%;
   background-image: url(img/img3.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -509,149 +440,54 @@ span {
 
 
 /* RESPONSIVE: TABLET  */
-@media only screen and (max-width: 1050px) {
-  .wrapper {
-    margin: 0;
-    border: 0;
-  }
-
-  .navbar {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    width: 100%;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-color: #333;
-    z-index: 1;
-  }
-
-  a:hover {
-    color: rgb(106, 196, 188);
-  }
-
-  a:active {
-    color: rgb(106, 196, 188);
-  }
+@media screen and (max-width: 1050px) {
 
   /* WELCOME DIV */
   .welcomeCont {
-    width: 100%;
-    height: 90rem;
-    background-image: url(img/img1.jpg);
-    background-size: cover;
+  padding: 2em;
   }
-
-  .welcome {
-    left: 0;
-    top: 23em;
-    width: 100%;
-    font-family: avenir next;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+  .welcome{
+    padding: 0em, 2em;
+    top: 32em;
   }
-
   .welcome2 {
-    position: relative;
-    left: 0;
-    top: 24em;
-    width: 100%;
-    text-align: center;
-    font-family: avenir next;
-    font-weight: bold;
-    color: white;
+    top: 35em;
   }
 
   /* SKILLS DIV */
 
   .skillsTitle {
-    display: flex;
     padding: 3em 0 0 0;
-    justify-content: center;
     font-weight: 600;
     font-size: 2.5em;
-    font-family: avenir next;
-    width: 100%;
-    color: gray;
-    text-decoration: underline;
   }
-  .skillsCont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 65em;
-    background-color: white;
-  }
-
   .skillsDesc p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-    padding: 1em 5em;
+    padding: 1em 1em;
     font-size: 1.3em;
     font-weight: 400;
-    font-family: avenir next;
-    color: rgb(56, 49, 49);
   }
-
   .skillTag h2 {
-    text-decoration: underline;
     font-size: 2em;
     font-weight: 400;
     padding: 1em 0 0 0;
-    justify-content: center;
-    font-family: avenir next;
-    color: #333;
   }
 
   /* ABOUT DIV */
-  .aboutCont {
-    width: 100%;
-    height: 65em;
-    background-color: white;
-  }
-
   .aboutTitle {
-    display: flex;
-    padding: 5em 0 1em 0;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
+    padding: 3em 0 1em 0;
     font-size: 1.5em;
-    font-family: avenir next;
-    color: gray;
-    text-decoration: underline;
   }
-
-  .aboutDesc {
-    width: 80%;
-    height: 25em;
-    padding: 0em 1px 0 3.3em;
-    font-size: 1.5em;
-    font-weight: 300;
-    font-family: avenir next;
-    color: rgb(56, 49, 49);
-  }
-
   .myPic {
-    display: flex;
     width: 8.6em;
     height: 9.5em;
-    border-radius: 50%;
-    padding: 0.3em;
-    background-color: gray;
   }
   .myImg {
     display: flex;
     justify-content: center;
-    padding: 1em 0 0 0;
+    padding: 1em 0 2em 0;
+  }
+  .aboutDesc{
+    padding: 0 3em;
   }
 
   /* CONTACT DIV */
@@ -693,7 +529,6 @@ span {
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
-    width: 80%;
     padding: 2em 5em;
     font-size: 1.3em;
   }
@@ -941,36 +776,13 @@ span {
 /* RESPONSIVE: MOBILE PHONES  */
 
 @media screen and (max-width: 450px) {
-  .wrapper {
-    margin: 0;
-    border: 0;
-  }
 
-  html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  border: 0;
-  padding: 0px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  background-color: transparent;
-}
-  .nav2 {
-    height: 0px;
-
-  }
-  .navlinks2{
-      background-color: transparent;
-  }
-
-  label {
+  /* label {
     display: block;
     cursor: pointer;
     width: 26px;
     float: right;
-    color: springgreen;
+    color:rgb(69, 177, 168);
     position:fixed;
     top:10px;
     left:320px;
@@ -979,67 +791,18 @@ body {
     -o-transition:all 600ms ease-in;
     transition:all 600ms ease-in;
     z-index:500;
-  }
+  } */
 
-  .menu {
-    text-align: center;
-    width: 50%;
-    display: none;
-    background-color: transparent;
-    border-bottom: 1px solid rgb(145, 144, 144);
-    position: fixed;
-
-  }
-
-  .menu a {
-    display: block;
-    clear: right;
-    background-color: rgba(0, 174, 255, 0.589);
-    font-weight: 400;
-    border-bottom: 1.5px solid rgb(145, 144, 144);
-  }
-
-  #toggle:checked + .menu {
-    display: block;
-  }
-  #toggle:checked + .nav2 {
-      height: 70px;
-  }
- 
-  .nav2{
-      background-color: transparent;
-  }
-
-  .navLinks:hover {
-    color: rgb(106, 196, 188);
-  }
-
-  a:active {
-    color: rgb(106, 196, 188);
-    background-color: rgba(255, 238, 0, 0.589)
-  }
 
   /* WELCOME DIV */
-  .welcomeCont {
-    width: 100%;
-    height: 47em;
-    background-image: url(img/img1.jpg);
-    background-size: cover;
-  }
-
   .welcome {
-    left: 0;
-    top: 18em;
-    width: 100%;
-    font-family: avenir next;
-    font-weight: bold;
-    font-size: .9em;
-    color: rgb(255, 255, 255);
+    top: 20em;
+    font-weight: 200;
+    font-size: .6em;
   }
 
   .welcome2 {
-    left: 0;
-    top: 24em;
+    top: 21em;
     width: 100%;
     text-align: center;
     font-family: avenir next;
@@ -1049,104 +812,34 @@ body {
   }
 
   /* SKILLS DIV */
-
   .skillsTitle {
-    display: flex;
     padding: 1em 0 0 0;
-    justify-content: center;
     font-weight: 600;
     font-size: 1.5em;
-    font-family: avenir next;
-    width: 100%;
-    color: gray;
-    text-decoration: underline;
-  }
-  .skillsCont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 55em;
-    background-color: white;
-  }
-
+  } 
   .skillsDesc p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-    border-radius: 0.5em;
-    padding: .6em 0 0 1em;
+    padding: .6em 0 0 0;
     font-size: 1.3em;
     font-weight: 400;
-    font-family: avenir next;
-    color: rgb(56, 49, 49);
   }
-
-
-.skillsDesc{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.skillsDesc h2{
-    padding: 0;
-}
-
   .skillTag h2 {
-    text-decoration: underline;
     font-size: 2em;
     font-weight: 400;
     padding: .5em 0 0 0;
-    justify-content: center;
-    text-align: center;
-    font-family: avenir next;
-    color: #333;
   }
 
   /* ABOUT DIV */
-  .aboutCont {
-    width: 100%;
-    height: 83em;
-    background-color: white;
-  }
-
   .aboutTitle {
-    display: flex;
-    padding: 1.5em 0 1em 0;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
+    padding: 3em 0 1em 0;
     font-size: 1.5em;
-    font-family: avenir next;
-    color: gray;
-    text-decoration: underline;
   }
-
   .aboutDesc {
-    height: 25em;
-    padding: 9.5em 0 0 1.7em ;
+    padding: 1.5em .9em 0 .9em ;
     font-size: 1.4em;
-    width: 80%;
-    font-weight: 300;
-    font-family: avenir next;
-    color: rgb(56, 49, 49);
-  }
-
-  .myPic {
-    display: flex;
-    width: 8.6em;
-    height: 9.5em;
-    border-radius: 50%;
-    padding: 0.3em;
-    background-color: gray;
+    font-weight: 300; 
   }
   .myImg {
-    display: flex;
-    justify-content: center;
-    padding: 15em 0 0 0;
+    padding: 1em 0 3em 0;
   }
 
   /* CONTACT DIV */

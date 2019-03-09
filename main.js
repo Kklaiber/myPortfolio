@@ -2,7 +2,7 @@ const parallax = document.getElementById("parallax");
 
 window.addEventListener("scroll", function() {
   let offset = window.pageYOffset;
-  parallax.style.backgroundPositionY = offset * .7 + "px";
+  parallax.style.backgroundPositionY = offset * .7 + " px";
 });
 
 var phoneModal = document.getElementById("myPhoneModal");
@@ -40,16 +40,7 @@ window.onclick = function(event) {
 };
 
 
-// //Sandwich menu bar for mobile
-// function mobileMenu(){
-//     var x = document.getElementById('nav');
 
-//     if(x.className === 'navbar') {
-//         x.className += ' responsive';
-//     } else {
-//         x.className = 'navbar'
-//     }
-// }
 
 
 
