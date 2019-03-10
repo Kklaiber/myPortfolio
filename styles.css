@@ -49,6 +49,7 @@ padding-right: 60px;
 .nav-link{
   color: rgb(240, 240, 240);
   font-size: 1.2em !important;
+  font-weight: 100;
 }
 .nav-link:hover {
   color: rgb(106, 196, 188);
@@ -60,7 +61,7 @@ nav .icon {
   display: none;
 }
 .fa-bars{
-  font-size: 2em;
+  font-size: 1.5em;
   color: springgreen;
 }
 a img{
@@ -463,6 +464,12 @@ footer h4{
   .welcome2 {
     top: 15em;
   }
+  .navbar-brand img{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+   
+  }
 
   /* SKILLS DIV */
 
@@ -806,6 +813,7 @@ footer h4{
 
 
   /* WELCOME DIV */
+ 
   .welcome {
     top: 18em;
     font-weight: 200;
