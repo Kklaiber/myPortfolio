@@ -21,6 +21,10 @@ body {
   border: 0;
 }
 
+.padding{
+  padding-bottom: 3em;
+}
+
 
 /* NAVBAR SECTION */
 .navbar {
@@ -59,6 +63,10 @@ nav .icon {
   font-size: 2em;
   color: springgreen;
 }
+a img{
+margin: 0 0 0 1em;
+float: right;
+}
 
 
 /* WELCOME DIV */
@@ -95,7 +103,7 @@ nav .icon {
 
 /* SKILLS DIV */
 .skillsTitle {
-  padding: 4em 0 2em 0;
+  padding: 5em 0 2em 0;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: avenir next;
@@ -121,7 +129,7 @@ nav .icon {
 
 /* ABOUT DIV */
 .aboutTitle {
-  padding: 3em 0 1em 0;
+  padding: 5em 0 1em 0;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: avenir next;
@@ -146,12 +154,12 @@ nav .icon {
 .myImg {
   display: flex;
   justify-content: center;
-  padding-bottom: 3em;
+  padding-bottom: 3.5em;
 }
 
 /* CONTACT DIV */
 .contactTitle {
-  padding: 3em 0 1em 0;
+  padding: 4em 0 1em 0;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: avenir next;
@@ -163,9 +171,9 @@ nav .icon {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding-bottom: 5em;
   font-size: 1em;
   font-weight: 200;
-  padding: 10em, 15em;
   color: rgb(56, 49, 49);
 }
 
@@ -462,9 +470,9 @@ footer{
     font-size: 2.5em;
   }
   .skillsDesc p {
-    padding: 1em 1em;
     font-size: 1.3em;
     font-weight: 400;
+    
   }
   .skillTag h2 {
     font-size: 2em;
@@ -514,13 +522,14 @@ footer{
 
   .contactHeader {
     font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     font-size: 1.9em;
-    padding: 0 0 1em 3em;
-    width: 80%;
+    padding: 0 0 1em 0;
+    font-family: avenir next;
+  }
+  .contactHeader2 {
+    font-weight: 300;
+    font-size: 1.5em;
+    padding: 1em 1em 1em 1em;
     font-family: avenir next;
   }
 
@@ -529,7 +538,7 @@ footer{
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
-    padding: 2em 5em;
+    padding-bottom: 8em;
     font-size: 1.3em;
   }
 
@@ -813,7 +822,7 @@ footer{
 
   /* SKILLS DIV */
   .skillsTitle {
-    padding: 1em 0 0 0;
+    padding: 4em 0 0 0;
     font-weight: 600;
     font-size: 1.5em;
   } 
@@ -830,7 +839,7 @@ footer{
 
   /* ABOUT DIV */
   .aboutTitle {
-    padding: 3em 0 1em 0;
+    padding: 4em 0 1em 0;
     font-size: 1.5em;
   }
   .aboutDesc {
@@ -846,7 +855,7 @@ footer{
 
   .contactTitle {
     display: flex;
-    padding: 1.5em 0 0 0;
+    padding: 4em 0 0 0;
     justify-content: center;
     font-weight: bolder;
     font-size: 1.5em;
@@ -866,17 +875,32 @@ footer{
 
   .contactHeader {
     font-weight: 300;
+    font-size: 1.6em;
     padding: 1em 0 0 1em;
     font-family: avenir next;
   }
+  .contactHeader2 {
+    font-weight: 300;
+    font-size: 1.4em;
+    padding: 1em;
+    font-family: avenir next;
+  }
 
-  .contactDesc {
+  /* .contactDesc {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
     width: 90%;
     padding: .5em 5em;
+    font-size: 1.3em;
+  } */
+  .contactDesc {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 8em;
     font-size: 1.3em;
   }
 
