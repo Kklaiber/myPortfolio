@@ -456,10 +456,10 @@ footer{
   }
   .welcome{
     padding: 0em, 2em;
-    top: 22em;
+    top: 14em;
   }
   .welcome2 {
-    top: 25em;
+    top: 15em;
   }
 
   /* SKILLS DIV */
@@ -805,13 +805,13 @@ footer{
 
   /* WELCOME DIV */
   .welcome {
-    top: 20em;
+    top: 18em;
     font-weight: 200;
     font-size: .6em;
   }
 
   .welcome2 {
-    top: 21em;
+    top: 19em;
     width: 100%;
     text-align: center;
     font-family: avenir next;
